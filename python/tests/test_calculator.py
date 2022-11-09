@@ -1,7 +1,10 @@
-import pytest
+from calculator import Calculator
 
+class Authorizer():
+    def authorize():
+        return False
 
-def test_divide_should_raise_error_when_not_authorized():
-    # TODO: write a test that fails due to the bug in
-    # Calculator.divide
-    pass
+def test_divide_should_raise_error_when_not_authorized(self):
+    
+    calculator = Calculator(Authorizer())
+
